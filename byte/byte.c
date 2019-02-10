@@ -1,10 +1,9 @@
 #include <stdio.h>
-int main()
- {
-    long nc;
-    nc = 0;
+
+int main() {
+    long nc = 0;
     while(getchar() != EOF) {
         ++nc;
     }
-    printf("%ld\n", nc);
+    printf("\n%ld\n", nc);
 }
