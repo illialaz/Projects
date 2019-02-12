@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int enter, tab, space = 0;
-    int c, t, p;
+    int c;
     while((c = getchar()) != EOF) {
         if (c == '\n') {
             ++enter;
