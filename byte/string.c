@@ -1,22 +1,21 @@
 #include <stdio.h>
-int main(){
-    int enter, tab, space = 0;
-    int c;
-    while((c = getchar()) != EOF) {
-        if (c == '\n') {
-            ++enter;
+
+int main() {
+    int enter = 0, tab = 0, space = 0;
+    int ch;
+
+    while ((ch = getchar()) != EOF) {
+        if (ch == '\n') {
+            enter++;
         }
-        if(c  == ' ') {
-            ++space;
+        if (ch == ' ') {
+            space++;
         }
-        if(c == '\t') {
-            ++tab;
+        if (ch == '\t') {
+            tab++;
         }
     }
-    printf("\nNumber of enters: ");
-    printf("%d\n", enter);
-    printf("Number of spaces: ");
-    printf("%d\n", space);
-    printf("Number of tabs: ");
-    printf("%d\n", tab);
+    printf("\nNumber of enters: %d\n", enter);
+    printf("Number of spaces: %d\n", space);
+    printf("Number of tabs: %d\n", tab);
 }
