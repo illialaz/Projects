@@ -14,7 +14,7 @@ int main() {
     while (cur_length) {
         if (cur_length > max_length) {
             max_length = cur_length;
-            reverse(cur_line, max_line, cur_length);
+            reverse(cur_line, max_line, &cur_length);
         }
         cur_length = get_line(cur_line);
     }
